@@ -1,19 +1,20 @@
 //
 //  AppDelegate.swift
-//  homies
+//  testSwift
 //
-//  Created by vidal françois on 29/08/2019.
+//  Created by vidal françois on 08/06/2019.
 //  Copyright © 2019 vidal françois. All rights reserved.
 //
 
 import UIKit
 import CoreData
+import Foundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -53,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "homies")
+        let container = NSPersistentContainer(name: "testSwift")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
